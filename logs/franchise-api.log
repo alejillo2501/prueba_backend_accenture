@@ -1,0 +1,1214 @@
+2025-11-16T13:59:05.984-05:00  INFO 32620 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 32620 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T13:59:05.990-05:00 DEBUG 32620 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T13:59:05.991-05:00  INFO 32620 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T13:59:06.064-05:00  INFO 32620 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T13:59:06.064-05:00  INFO 32620 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T13:59:06.595-05:00  INFO 32620 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T13:59:06.728-05:00  INFO 32620 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T13:59:07.485-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T13:59:07.488-05:00  INFO 32620 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T13:59:07.506-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T13:59:07.894-05:00  INFO 32620 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T13:59:07.912-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T13:59:07.932-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T13:59:07.998-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Pulling docker image: testcontainers/ryuk:0.12.0. Please be patient; this may take some time but only needs to be done once.
+2025-11-16T13:59:09.045-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Starting to pull image
+2025-11-16T13:59:09.067-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2025-11-16T13:59:09.928-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (0 bytes/? MB)
+2025-11-16T13:59:10.129-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (4 MB/? MB)
+2025-11-16T13:59:10.130-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (4 MB/6 MB)
+2025-11-16T13:59:10.232-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (4 MB/6 MB)
+2025-11-16T13:59:10.330-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (4 MB/6 MB)
+2025-11-16T13:59:10.414-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (4 MB/6 MB)
+2025-11-16T13:59:10.421-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Image testcontainers/ryuk:0.12.0 pull took PT2.4224642S
+2025-11-16T13:59:10.421-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-1188835359] tc.testcontainers/ryuk:0.12.0            : Pull complete. 3 layers, pulled in 1s (downloaded 4 MB at 4 MB/s)
+2025-11-16T13:59:10.480-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T13:59:10.682-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 03209109dd05b85d02f531184d8945a0324fdaa1c05b0d86c5ec4f4277bd7d1d
+2025-11-16T13:59:11.141-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.661158S
+2025-11-16T13:59:11.158-05:00  INFO 32620 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T13:59:11.159-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T13:59:11.159-05:00  INFO 32620 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T13:59:11.170-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Pulling docker image: mysql:latest. Please be patient; this may take some time but only needs to be done once.
+2025-11-16T13:59:11.814-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Starting to pull image
+2025-11-16T13:59:11.815-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2025-11-16T13:59:12.885-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  8 pending,  1 downloaded,  0 extracted, (0 bytes/? MB)
+2025-11-16T13:59:12.886-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  7 pending,  2 downloaded,  0 extracted, (0 bytes/? MB)
+2025-11-16T13:59:12.886-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  6 pending,  3 downloaded,  0 extracted, (0 bytes/? MB)
+2025-11-16T13:59:12.886-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  5 pending,  4 downloaded,  0 extracted, (0 bytes/? MB)
+2025-11-16T13:59:12.985-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  4 pending,  5 downloaded,  0 extracted, (326 bytes/? MB)
+2025-11-16T13:59:12.986-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  3 pending,  6 downloaded,  0 extracted, (326 bytes/? MB)
+2025-11-16T13:59:12.991-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  3 pending,  6 downloaded,  1 extracted, (326 bytes/? MB)
+2025-11-16T13:59:13.000-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  3 pending,  6 downloaded,  2 extracted, (326 bytes/? MB)
+2025-11-16T13:59:13.186-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  2 pending,  7 downloaded,  2 extracted, (7 MB/? MB)
+2025-11-16T13:59:13.391-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  2 pending,  7 downloaded,  3 extracted, (14 MB/? MB)
+2025-11-16T13:59:13.395-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  2 pending,  7 downloaded,  4 extracted, (14 MB/? MB)
+2025-11-16T13:59:13.488-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  2 pending,  7 downloaded,  5 extracted, (19 MB/? MB)
+2025-11-16T13:59:16.689-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  1 pending,  8 downloaded,  5 extracted, (209 MB/? MB)
+2025-11-16T13:59:16.990-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  9 downloaded,  5 extracted, (214 MB/216 MB)
+2025-11-16T13:59:17.594-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  9 downloaded,  6 extracted, (214 MB/216 MB)
+2025-11-16T13:59:17.692-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  9 downloaded,  7 extracted, (214 MB/216 MB)
+2025-11-16T13:59:23.397-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  9 downloaded,  8 extracted, (214 MB/216 MB)
+2025-11-16T13:59:23.475-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pulling image layers:  0 pending,  9 downloaded,  9 extracted, (214 MB/216 MB)
+2025-11-16T13:59:23.483-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Image mysql:latest pull took PT12.3124026S
+2025-11-16T13:59:23.483-05:00  INFO 32620 --- [franchise-api] [docker-java-stream-773371541] tc.mysql:latest                          : Pull complete. 9 layers, pulled in 11s (downloaded 214 MB at 19 MB/s)
+2025-11-16T13:59:23.518-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T13:59:24.855-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: f6472154ca73b3c32c416d3be4cf4efb27289b24554c7ee0cf526b5f3773b97c
+2025-11-16T13:59:25.295-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:53895/test using query 'SELECT 1'
+2025-11-16T14:01:25.396-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:8) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:53895/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:01:25.431-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 18:59:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 18:59:25+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 18:59:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 18:59:25+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T18:59:25.735959Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T18:59:25.736920Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 81
+2025-11-16T18:59:25.746597Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T18:59:26.705925Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T18:59:29.843188Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T18:59:29.843525Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T18:59:29.843545Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T18:59:32.285544Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:01:25.497-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:01:25.650-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: aa2bb03a8f77030b8bfba1e0026d1cca4297864d8f6660888a90a47c5c3afcf2
+2025-11-16T14:01:26.037-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:54746/test using query 'SELECT 1'
+2025-11-16T14:03:26.086-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:8) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:54746/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:03:26.116-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 19:01:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:01:26+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 19:01:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:01:26+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T19:01:26.320862Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T19:01:26.321880Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 80
+2025-11-16T19:01:26.331695Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T19:01:27.078146Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T19:01:30.266929Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T19:01:30.267252Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T19:01:30.267273Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T19:01:32.740336Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:03:26.195-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:03:26.358-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: 7001574ac2e8ec6ce83043e0fb8b7ae723295f7b395d670faee47ea0711a5c6c
+2025-11-16T14:03:26.718-05:00  INFO 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:64656/test using query 'SELECT 1'
+2025-11-16T14:05:26.740-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:8) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:64656/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:05:26.772-05:00 ERROR 32620 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 19:03:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:03:26+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 19:03:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:03:26+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T19:03:27.009350Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T19:03:27.010398Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 80
+2025-11-16T19:03:27.020280Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T19:03:27.856793Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T19:03:30.619449Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T19:03:30.619802Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T19:03:30.619825Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T19:03:32.981999Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:05:26.835-05:00  WARN 32620 --- [franchise-api] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'franchiseApiApplication': Error creating bean with name 'mysqlContainer' defined in com.accenture.franchise.TestcontainersConfiguration: Container startup failed for image mysql:latest
+2025-11-16T14:05:26.847-05:00  INFO 32620 --- [franchise-api] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16T14:05:26.874-05:00 ERROR 32620 --- [franchise-api] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'franchiseApiApplication': Error creating bean with name 'mysqlContainer' defined in com.accenture.franchise.TestcontainersConfiguration: Container startup failed for image mysql:latest
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:614) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:8) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlContainer' defined in com.accenture.franchise.TestcontainersConfiguration: Container startup failed for image mysql:latest
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:614) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 30 common frames omitted
+Caused by: org.testcontainers.containers.ContainerLaunchException: Container startup failed for image mysql:latest
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:351) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 41 common frames omitted
+Caused by: org.rnorth.ducttape.RetryCountExceededException: Retry limit hit with exception
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:88) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	... 51 common frames omitted
+Caused by: org.testcontainers.containers.ContainerLaunchException: Could not create/start container
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:556) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	... 52 common frames omitted
+Caused by: java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:64656/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:27:10.783-05:00  INFO 9044 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 9044 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:27:10.785-05:00 DEBUG 9044 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:27:10.786-05:00  INFO 9044 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:27:10.827-05:00  INFO 9044 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:27:10.828-05:00  INFO 9044 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:27:11.300-05:00  INFO 9044 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:27:11.396-05:00  INFO 9044 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:27:12.074-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T14:27:12.078-05:00  INFO 9044 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T14:27:12.095-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T14:27:12.259-05:00  INFO 9044 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-11-16T14:27:12.444-05:00  INFO 9044 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T14:27:12.446-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T14:27:12.466-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T14:27:12.527-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T14:27:12.762-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: a4da88474b55ba4cd1eeb45b8d7a75f3ff1cca2234d6d859c3d9c7320201d2f8
+2025-11-16T14:27:13.151-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6247852S
+2025-11-16T14:27:13.160-05:00  INFO 9044 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T14:27:13.160-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T14:27:13.161-05:00  INFO 9044 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T14:27:13.164-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:27:13.345-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: 1c47867664d72b80983c6ecc501970ebf3529fa494f3cb0c396a6c5c8e4ab0f1
+2025-11-16T14:27:13.727-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:63559/test using query 'SELECT 1'
+2025-11-16T14:29:13.800-05:00 ERROR 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:8) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:63559/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:29:13.837-05:00 ERROR 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 19:27:13+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:27:13+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 19:27:13+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:27:14+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T19:27:14.056182Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T19:27:14.057357Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 80
+2025-11-16T19:27:14.068186Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T19:27:14.653544Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T19:27:17.181702Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T19:27:17.182045Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T19:27:17.182066Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T19:27:18.618422Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:29:13.900-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:29:14.077-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: dbbf58fcb13067c54e63421f62f445adb4d8cdde311be7f5ea664a6b1ae29815
+2025-11-16T14:29:14.429-05:00  INFO 9044 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:61810/test using query 'SELECT 1'
+2025-11-16T14:31:02.334-05:00  INFO 26636 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 26636 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:31:02.337-05:00 DEBUG 26636 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:31:02.338-05:00  INFO 26636 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:31:02.388-05:00  INFO 26636 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:31:02.389-05:00  INFO 26636 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:31:02.903-05:00  INFO 26636 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:31:02.999-05:00  INFO 26636 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:31:03.583-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T14:31:03.585-05:00  INFO 26636 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T14:31:03.633-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T14:31:03.798-05:00  INFO 26636 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-11-16T14:31:03.984-05:00  INFO 26636 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T14:31:03.985-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T14:31:04.001-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T14:31:04.064-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T14:31:04.303-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 68ac6b1175eb4bf1d5165abe6cbefe7798689dcb417801cc5df416e074c4737e
+2025-11-16T14:31:04.756-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6918396S
+2025-11-16T14:31:04.764-05:00  INFO 26636 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T14:31:04.765-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T14:31:04.765-05:00  INFO 26636 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T14:31:04.768-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:31:04.931-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: f685f4db7092c607d8cd8404fc69004c2dc9023fb798c5d0e2d5e880bbe89bb8
+2025-11-16T14:31:05.312-05:00  INFO 26636 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:50607/test using query 'SELECT 1'
+2025-11-16T14:32:49.264-05:00  INFO 17008 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 17008 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:32:49.267-05:00 DEBUG 17008 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:32:49.268-05:00  INFO 17008 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:32:49.312-05:00  INFO 17008 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:32:49.313-05:00  INFO 17008 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:32:49.767-05:00  INFO 17008 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:32:49.859-05:00  INFO 17008 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:32:50.434-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T14:32:50.438-05:00  INFO 17008 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T14:32:50.488-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T14:32:50.656-05:00  INFO 17008 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-11-16T14:32:50.842-05:00  INFO 17008 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T14:32:50.845-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T14:32:50.860-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T14:32:50.919-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T14:32:51.158-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: de040b75efeccf7c723f01567de1f288ccf567de7cab7c3b7381708969845420
+2025-11-16T14:32:51.533-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6140182S
+2025-11-16T14:32:51.541-05:00  INFO 17008 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T14:32:51.542-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T14:32:51.543-05:00  INFO 17008 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T14:32:51.547-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:32:51.863-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: afa885c8418918d26d3553fc4ace6de3a14e6d5ef0029c1da2ceb42469029d24
+2025-11-16T14:32:52.203-05:00  INFO 17008 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:52332/test using query 'SELECT 1'
+2025-11-16T14:33:12.247-05:00  INFO 34776 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 34776 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:33:12.249-05:00 DEBUG 34776 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:33:12.249-05:00  INFO 34776 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:33:12.286-05:00  INFO 34776 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:33:12.287-05:00  INFO 34776 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:33:12.765-05:00  INFO 34776 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:33:12.867-05:00  INFO 34776 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:33:13.629-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T14:33:13.633-05:00  INFO 34776 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T14:33:13.649-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T14:33:13.788-05:00  INFO 34776 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-11-16T14:33:13.977-05:00  INFO 34776 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T14:33:13.978-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T14:33:13.995-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T14:33:14.069-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T14:33:14.302-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 6ac58b57c618a3de6db4faa240c0b674247c9edab5dc8d8e9bbfd109bfc1df74
+2025-11-16T14:33:14.728-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6591695S
+2025-11-16T14:33:14.737-05:00  INFO 34776 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T14:33:14.737-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T14:33:14.738-05:00  INFO 34776 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T14:33:14.742-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:33:14.937-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: a50b15b1bb8539dff83ccfbeac2d0146fb254c50552bfc8773dda6c1db61c708
+2025-11-16T14:33:15.340-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:58182/test using query 'SELECT 1'
+2025-11-16T14:35:15.442-05:00 ERROR 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:10) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:58182/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:35:15.476-05:00 ERROR 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 19:33:15+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:33:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 19:33:15+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:33:15+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T19:33:15.679723Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T19:33:15.680741Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 80
+2025-11-16T19:33:15.691001Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T19:33:16.423839Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T19:33:19.094730Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T19:33:19.095116Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T19:33:19.095144Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T19:33:21.432482Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:35:15.544-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:35:15.722-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: fb9d48446574500ad77a87061b3e3e8b495f12790b274bfea8a296bf68bd3d4e
+2025-11-16T14:35:16.090-05:00  INFO 34776 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:57240/test using query 'SELECT 1'
+2025-11-16T14:35:59.521-05:00  INFO 32868 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 32868 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:35:59.523-05:00 DEBUG 32868 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:35:59.524-05:00  INFO 32868 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:35:59.568-05:00  INFO 32868 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:35:59.569-05:00  INFO 32868 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:36:00.009-05:00  INFO 32868 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:36:00.107-05:00  INFO 32868 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:36:00.723-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-11-16T14:36:00.726-05:00  INFO 32868 --- [franchise-api] [restartedMain] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-11-16T14:36:00.743-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-11-16T14:36:00.891-05:00  INFO 32868 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-11-16T14:36:01.069-05:00  INFO 32868 --- [franchise-api] [restartedMain] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-11-16T14:36:01.071-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-11-16T14:36:01.089-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.0.4
+  API Version: 1.48
+  Operating System: Docker Desktop
+  Total Memory: 11817 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-11-16T14:36:01.147-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-16T14:36:01.404-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 23bed61ab6b59850b2327ddcadfef5795669ea9641b23fd143398f3dd19742f0
+2025-11-16T14:36:01.829-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.6814564S
+2025-11-16T14:36:01.837-05:00  INFO 32868 --- [franchise-api] [restartedMain] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-11-16T14:36:01.838-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-11-16T14:36:01.839-05:00  INFO 32868 --- [franchise-api] [restartedMain] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-11-16T14:36:01.843-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:36:02.041-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: 488d4f7ddcf86eb110894ed23e296ba3a03ebc0a9344ef45c23b703e2cb44040
+2025-11-16T14:36:02.372-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:59421/test using query 'SELECT 1'
+2025-11-16T14:38:02.477-05:00 ERROR 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Could not start container
+
+java.lang.IllegalStateException: Wait strategy failed. Container exited with code 1
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:525) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346) ~[testcontainers-1.21.3.jar:na]
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81) ~[duct-tape-1.0.8.jar:na]
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336) ~[testcontainers-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322) ~[testcontainers-1.21.3.jar:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup.start(TestcontainersStartup.java:108) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersStartup$1.start(TestcontainersStartup.java:49) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.start(TestcontainersLifecycleBeanPostProcessor.java:135) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeStartables(TestcontainersLifecycleBeanPostProcessor.java:123) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:96) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.getBeans(TestcontainersLifecycleBeanPostProcessor.java:161) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.initializeContainers(TestcontainersLifecycleBeanPostProcessor.java:142) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.boot.testcontainers.lifecycle.TestcontainersLifecycleBeanPostProcessor.postProcessAfterInitialization(TestcontainersLifecycleBeanPostProcessor.java:92) ~[spring-boot-testcontainers-3.5.7.jar:3.5.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:445) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1829) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:10) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: java.lang.IllegalStateException: Container is started, but cannot be accessed by (JDBC URL: jdbc:mysql://localhost:59421/test), please check container logs
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:210) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:492) ~[testcontainers-1.21.3.jar:na]
+	... 54 common frames omitted
+Caused by: java.sql.SQLException: Could not create new connection
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:296) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:252) ~[jdbc-1.21.3.jar:na]
+	at org.testcontainers.containers.JdbcDatabaseContainer.waitUntilContainerStarted(JdbcDatabaseContainer.java:192) ~[jdbc-1.21.3.jar:na]
+	... 55 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at org.testcontainers.containers.JdbcDatabaseContainer.createConnection(JdbcDatabaseContainer.java:287) ~[jdbc-1.21.3.jar:na]
+	... 57 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:592) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:516) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:411) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1331) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:155) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 61 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:58) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:586) ~[mysql-connector-j-9.4.0.jar:9.4.0]
+	... 67 common frames omitted
+
+2025-11-16T14:38:02.518-05:00 ERROR 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Log output from the failed container:
+2025-11-16 19:36:02+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:36:02+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2025-11-16 19:36:02+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.5.0-1.el9 started.
+2025-11-16 19:36:02+00:00 [Note] [Entrypoint]: Initializing database files
+2025-11-16T19:36:02.671925Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-11-16T19:36:02.672938Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 9.5.0) initializing of server in progress as process 80
+2025-11-16T19:36:02.682790Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-11-16T19:36:03.267306Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2025-11-16T19:36:05.759237Z 0 [ERROR] [MY-000067] [Server] unknown variable 'innodb_log_file_size=5M'.
+2025-11-16T19:36:05.759560Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2025-11-16T19:36:05.759582Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-11-16T19:36:07.192050Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+
+2025-11-16T14:38:02.593-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Creating container for image: mysql:latest
+2025-11-16T14:38:02.793-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Container mysql:latest is starting: 1ca9931e6c6a6fcb7b7b73f1bc37ea00c46f5b5c8a7fd23b3ccdff39d290e8fe
+2025-11-16T14:38:03.139-05:00  INFO 32868 --- [franchise-api] [restartedMain] tc.mysql:latest                          : Waiting for database connection to become available at jdbc:mysql://localhost:55686/test using query 'SELECT 1'
+2025-11-16T14:39:05.217-05:00  INFO 22520 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Starting FranchiseApiApplication using Java 25.0.1 with PID 22520 (E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes started by aleja in E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api)
+2025-11-16T14:39:05.219-05:00 DEBUG 22520 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-16T14:39:05.221-05:00  INFO 22520 --- [franchise-api] [restartedMain] c.a.franchise.FranchiseApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T14:39:05.264-05:00  INFO 22520 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T14:39:05.264-05:00  INFO 22520 --- [franchise-api] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T14:39:05.692-05:00  INFO 22520 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-11-16T14:39:05.785-05:00  INFO 22520 --- [franchise-api] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 3 R2DBC repository interfaces.
+2025-11-16T14:39:06.378-05:00  WARN 22520 --- [franchise-api] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'branchService' defined in file [E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes\com\accenture\franchise\application\service\BranchService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'branchRepositoryAdapter' defined in file [E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes\com\accenture\franchise\infrastructure\persistence\adapter\BranchRepositoryAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'branchR2dbcRepository' defined in com.accenture.franchise.infrastructure.persistence.repository.BranchR2dbcRepository defined in @EnableR2dbcRepositories declared on DatabaseConfig: Cannot resolve reference to bean 'r2dbcEntityTemplate' while setting bean property 'entityOperations'
+2025-11-16T14:39:06.386-05:00  INFO 22520 --- [franchise-api] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16T14:39:06.414-05:00 ERROR 22520 --- [franchise-api] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'branchService' defined in file [E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes\com\accenture\franchise\application\service\BranchService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'branchRepositoryAdapter' defined in file [E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes\com\accenture\franchise\infrastructure\persistence\adapter\BranchRepositoryAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'branchR2dbcRepository' defined in com.accenture.franchise.infrastructure.persistence.repository.BranchR2dbcRepository defined in @EnableR2dbcRepositories declared on DatabaseConfig: Cannot resolve reference to bean 'r2dbcEntityTemplate' while setting bean property 'entityOperations'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.FranchiseApiApplication.main(FranchiseApiApplication.java:12) ~[classes/:na]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:49) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication$Augmented.lambda$run$2(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.lambda$withHook$7(SpringApplication.java:1443) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication$Augmented.run(SpringApplication.java:1537) ~[spring-boot-3.5.7.jar:3.5.7]
+	at com.accenture.franchise.TestFranchiseApiApplication.main(TestFranchiseApiApplication.java:10) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.7.jar:3.5.7]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'branchRepositoryAdapter' defined in file [E:\PRUEBAS-EMPRESAS\ACCENTURE\BACKEND\franchise-api\franchise-api\target\classes\com\accenture\franchise\infrastructure\persistence\adapter\BranchRepositoryAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'branchR2dbcRepository' defined in com.accenture.franchise.infrastructure.persistence.repository.BranchR2dbcRepository defined in @EnableR2dbcRepositories declared on DatabaseConfig: Cannot resolve reference to bean 'r2dbcEntityTemplate' while setting bean property 'entityOperations'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'branchR2dbcRepository' defined in com.accenture.franchise.infrastructure.persistence.repository.BranchR2dbcRepository defined in @EnableR2dbcRepositories declared on DatabaseConfig: Cannot resolve reference to bean 'r2dbcEntityTemplate' while setting bean property 'entityOperations'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1725) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1474) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1770) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'r2dbcEntityTemplate' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Unsatisfied dependency expressed through method 'r2dbcEntityTemplate' parameter 0: Error creating bean with name 'r2dbcDatabaseClient' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [org.springframework.r2dbc.core.DatabaseClient]: Factory method 'databaseClient' threw exception with message: Error creating bean with name 'connectionFactory' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception with message: value must not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'r2dbcDatabaseClient' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [org.springframework.r2dbc.core.DatabaseClient]: Factory method 'databaseClient' threw exception with message: Error creating bean with name 'connectionFactory' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception with message: value must not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1708) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1653) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 72 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.r2dbc.core.DatabaseClient]: Factory method 'databaseClient' threw exception with message: Error creating bean with name 'connectionFactory' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception with message: value must not be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [com/accenture/franchise/infrastructure/config/DatabaseConfig.class]: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception with message: value must not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1281) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.data.r2dbc.config.AbstractR2dbcConfiguration.lookupConnectionFactory(AbstractR2dbcConfiguration.java:289) ~[spring-data-r2dbc-3.5.5.jar:3.5.5]
+	at org.springframework.data.r2dbc.config.AbstractR2dbcConfiguration.databaseClient(AbstractR2dbcConfiguration.java:138) ~[spring-data-r2dbc-3.5.5.jar:3.5.5]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$0.CGLIB$databaseClient$15(<generated>) ~[classes/:na]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400) ~[spring-context-6.2.12.jar:6.2.12]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$0.databaseClient(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 88 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.r2dbc.spi.ConnectionFactory]: Factory method 'connectionFactory' threw exception with message: value must not be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.12.jar:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 108 common frames omitted
+Caused by: java.lang.IllegalArgumentException: value must not be null
+	at io.r2dbc.spi.Assert.requireNonNull(Assert.java:54) ~[r2dbc-spi-1.0.0.RELEASE.jar:na]
+	at io.r2dbc.spi.ConnectionFactoryOptions$Builder.option(ConnectionFactoryOptions.java:295) ~[r2dbc-spi-1.0.0.RELEASE.jar:na]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig.connectionFactory(DatabaseConfig.java:22) ~[classes/:na]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$0.CGLIB$connectionFactory$0(<generated>) ~[classes/:na]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400) ~[spring-context-6.2.12.jar:6.2.12]
+	at com.accenture.franchise.infrastructure.config.DatabaseConfig$$SpringCGLIB$$0.connectionFactory(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.12.jar:6.2.12]
+	... 111 common frames omitted
+
